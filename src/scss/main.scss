@@ -1,0 +1,7 @@
+@import "reset";
+@import "src/scss/settings/fonts";
+@import "src/scss/settings/colors";
+
+body{
+  font-family: var(--font-base);
+}
