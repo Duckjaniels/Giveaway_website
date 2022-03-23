@@ -1,11 +1,19 @@
+import React from 'react';
 import './scss/App.scss';
+import {Home} from "./components/Home";
+import {HashRouter, Route, Routes} from "react-router-dom";
+import {Register} from "./components/Register";
+import {Login} from "./components/Login";
 
-function App() {
-  return (
-    <div className="App">
-      <h1> Test</h1>
-    </div>
-  );
-}
+const App = () => (
+
+    <HashRouter>
+        <Routes>
+            <Route  path="/" element={<Home/>}/>
+            <Route path="/Login" element={<Login/>}/>
+            <Route path="/Register" element={<Register/>}/>
+        </Routes>
+    </HashRouter>
+)
 
 export default App;
