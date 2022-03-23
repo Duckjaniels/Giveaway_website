@@ -3,6 +3,6 @@ import React from 'react';
 
 
 const HomeThreeColumns = () => (
-    <div>Link</div>
+    <div className="columns_section" title="section2" id="section2">Kolumny</div>
 );
 export {HomeThreeColumns}

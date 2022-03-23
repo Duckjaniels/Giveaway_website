@@ -1,12 +1,10 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-import {Login} from "./Login";
-import {Register} from "./Register";
-
+import {Link} from 'react-router-dom';
+import { Link as Scroll } from "react-scroll";
 
 const HomeHeader = () => (
     <div className="header">
-    <div className="header_section"  id="section1">
+    <div className="header_section" title="section1" id="section1">
     <div className= "header_photo"><img  src={require("../assets/Home-Hero-Image.jpg")}/> </div>
         <div className="header_user-panel">
             <ul className="header_user-buttons">
@@ -16,11 +14,36 @@ const HomeHeader = () => (
             <div className="header_navbar">
                 <nav className="header_navbar-content">
                     <ul className="header_navbar-items">
-                        <li className="header_navbar-item">Start</li>
-                        <li className="header_navbar-item">O co chodzi?</li>
-                        <li className="header_navbar-item">O nas</li>
-                        <li className="header_navbar-item">Funcacja i organizacje</li>
-                        <li className="header_navbar-item">Kontakt</li>
+                        <li className="header_navbar-item"><Scroll activeClass="active"
+                                                                 to="section1"
+                                                                 spy={true}
+                                                                 smooth={true}
+                                                                 offset={-70}
+                                                                 duration={500}>Start </Scroll></li>
+                        <li className="header_navbar-item"><Scroll activeClass="active"
+                                                                   to="section2"
+                                                                   spy={true}
+                                                                   smooth={true}
+                                                                   offset={-70}
+                                                                   duration={500}>O co chodzi?</Scroll></li>
+                        <li className="header_navbar-item"><Scroll activeClass="active"
+                                                                   to="section3"
+                                                                   spy={true}
+                                                                   smooth={true}
+                                                                   offset={-70}
+                                                                   duration={500}>O nas?</Scroll></li>
+                        <li className="header_navbar-item"><Scroll activeClass="active"
+                                                                   to="section4"
+                                                                   spy={true}
+                                                                   smooth={true}
+                                                                   offset={-70}
+                                                                   duration={500}>Fundacja i organizacje?</Scroll></li>
+                        <li className="header_navbar-item"><Scroll activeClass="active"
+                                                                   to="section5"
+                                                                   spy={true}
+                                                                   smooth={true}
+                                                                   offset={-70}
+                                                                   duration={500}>Kontakt</Scroll></li>
                     </ul>
                 </nav>
             </div>

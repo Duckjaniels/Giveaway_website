@@ -3,6 +3,6 @@ import React from 'react';
 
 
 const HomeContactFooter = () => (
-    <div>Link</div>
+    <div className="columns_section" title="section5" id="section5">Contact</div>
 );
 export {HomeContactFooter}
