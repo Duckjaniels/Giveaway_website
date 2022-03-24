@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {HomeHeader,} from "../HomeHeader";
 import {HomeContactFooter} from "../HomeContactFooter";
 import {HomeWhoHelp} from "../HomeWhoHelp";
@@ -9,7 +8,6 @@ import {HomeThreeColumns} from "../HomeThreeColumns";
 
 const Home = () => (
     <>
-        <Link to="/">Start</Link>
         <HomeHeader/>
        <HomeThreeColumns/>
             <HomeEasySteps/>
