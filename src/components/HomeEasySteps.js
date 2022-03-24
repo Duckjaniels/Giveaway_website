@@ -18,22 +18,22 @@ const HomeEasySteps = () => (
             <div className="easy_content-first">
                 <img src={Tshirt} alt="tshirt"/>
                 <p>Wibierz rzecz</p>
-                <span>ubrania, zabawki, sprzęt i inne</span>
+                <span>ubrania, zabawki,<br/> sprzęt i inne</span>
             </div>
             <div className="easy_content-second">
                 <img src={Bag} alt="bag"/>
                 <p>Spakuj je</p>
-                <span>skorzystaj z worków na śmieci</span>
+                <span>skorzystaj z<br/> worków na śmieci</span>
             </div>
             <div className="easy_content-third">
                 <img src={Scope} alt="scope"/>
-                <p>Zdecyduj komu chcesz pomóc</p>
-                <span>wybierz zaufane miejsce</span>
+                <p>Zdecyduj komu<br/> chcesz pomóc</p>
+                <span>wybierz zaufane<br/> miejsce</span>
             </div>
             <div className="easy_content-fourth">
                 <img src={Circle} alt="circle"/>
                 <p>Zamów kuriera</p>
-                <span>kurier przyjedzie w dogodnym terminie</span>
+                <span>kurier przyjedzie<br/> w dogodnym terminie</span>
             </div>
         </div>
         <div className="easy_button">
