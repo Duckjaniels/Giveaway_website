@@ -1,0 +1,31 @@
+.columns_section-second{
+  display: flex;
+  width: 1900px;
+  background-color: orange;
+  align-items: center;
+  justify-content: space-around;
+  height: 384px;
+}
+.columns_first-column, .columns_second-column, .columns_third-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 90px;
+    color: var(--color-gray);
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  h2{
+    font-size: 18px;
+    color: var(--color-gray);
+    font-weight: normal;
+    margin-bottom: 28px;
+  }
+  p{
+    text-align: center;
+    width: 334px;
+    color: var(--color-gray);
+    font-size: 16px;
+  }
+}
