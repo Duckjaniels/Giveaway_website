@@ -1,0 +1,40 @@
+.columns_section-fourth{
+  display: flex;
+  flex-direction: row;
+  width: 1900px;
+  text-align: center;
+  margin-top: 80px;
+}
+.about_image {
+  img {
+    width: 942px;
+    height: 935px;
+  }
+}
+.columns_section-content{
+  background-color: var(--color-bg-grey);
+  display: flex;
+align-items: center;
+  .about_title{
+    h1{
+      margin-top: 55px;
+      text-align: center;
+      font-size: 38px;
+      color: var(--color-gray);
+      margin-bottom: 40px;
+      font-weight: normal;
+      letter-spacing: -0.76px;
+    }
+    p{
+      font-size: 30px;
+      color: var(--color-gray);
+      margin: 55px 20%;
+      text-align: center;
+      width: 60%;
+      line-height: 40px;
+    }
+    .signature{
+      margin-left: 50%;
+    }
+  }
+}
