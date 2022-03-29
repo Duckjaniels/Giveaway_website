@@ -46,34 +46,34 @@ const HomeWhoHelp = () => (
                         </TabPanel>
                         <TabPanel>
                             <div className="who_table-fund-first">
-                                <h2>Fundacja “Dbam o Zdrowie”</h2>
+                                <h2>Fundacja “Lorem Ipsum 4”</h2>
                                 <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
                                 <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
                             </div>
                             <div className="who_table-fund-second">
-                                <h2>Fundacja “Dla dzieci”</h2>
+                                <h2>Fundacja “Lorem Ipsum 5”</h2>
                                 <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
                                 <span>ubrania, meble, zabawki</span>
                             </div>
                             <div className="who_table-fund-third">
-                                <h2>Fundacja “Bez domu”</h2>
+                                <h2>Fundacja “Lorem Ipsum 6”</h2>
                                 <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
                                 <span>ubrania, jedzenie, ciepłe koce</span>
                             </div>
                         </TabPanel>
                         <TabPanel>
                             <div className="who_table-fund-first">
-                                <h2>Fundacja “Dbam o Zdrowie”</h2>
+                                <h2>Fundacja “Lorem Ipsum 7”</h2>
                                 <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
                                 <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
                             </div>
                             <div className="who_table-fund-second">
-                                <h2>Fundacja “Dla dzieci”</h2>
+                                <h2>Fundacja “Lorem Ipsum 8”</h2>
                                 <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
                                 <span>ubrania, meble, zabawki</span>
                             </div>
                             <div className="who_table-fund-third">
-                                <h2>Fundacja “Bez domu”</h2>
+                                <h2>Fundacja “Lorem Ipsum 9”</h2>
                                 <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
                                 <span>ubrania, jedzenie, ciepłe koce</span>
                             </div>
@@ -84,7 +84,7 @@ const HomeWhoHelp = () => (
                 <TabPanel>
                     <Tabs>
                         <div className="who-table-org">
-                            <span className="who_table-description-org">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto asperiores atque, cupiditate deserunt dolores esse et exercitationem laboriosam, laborum magni nemo placeat quam quo repellat sapiente soluta vel voluptas!</span>
+                            <span className="who_table-description-org">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
                             <TabList>
                                 <Tab>1</Tab>
                                 <Tab>2</Tab>
@@ -92,57 +92,57 @@ const HomeWhoHelp = () => (
                         </div>
                         <TabPanel>
                             <div className="who_table-org-first">
-                                <h2>Fundacja “Dbam o Zdrowie”</h2>
-                                <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                                <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
+                                <h2>Organizacja “Lorem Ipsum 1”</h2>
+                                <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
+                                <span>Egestas, sed, tempus</span>
                             </div>
                             <div className="who_table-org-second">
-                                <h2>Fundacja “Dla dzieci”</h2>
-                                <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                                <span>ubrania, meble, zabawki</span>
+                                <h2>Organizacja “Lorem Ipsum 2”</h2>
+                                <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
+                                <span>Ut, aliquam, purus, sit, amet</span>
                             </div>
                             <div className="who_table-org-third">
-                                <h2>Fundacja “Bez domu”</h2>
-                                <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                                <span>ubrania, jedzenie, ciepłe koce</span>
+                                <h2>Organizacja “Lorem Ipsum 3”</h2>
+                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
+                                <span>Mi, quis, hendrerit, dolor</span>
                             </div>
                         </TabPanel>
                         <TabPanel>
                             <div className="who_table-org-first">
-                                <h2>Fundacja “Dbam o Zdrowie”</h2>
-                                <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                                <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
+                                <h2>Organizacja “Lorem Ipsum 4”</h2>
+                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
+                                <span>Mi, quis, hendrerit, dolor</span>
                             </div>
                             <div className="who_table-org-second">
-                                <h2>Fundacja “Dla dzieci”</h2>
-                                <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                                <span>ubrania, meble, zabawki</span>
+                                <h2>Organizacja “Lorem Ipsum 5”</h2>
+                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
+                                <span>Mi, quis, hendrerit, dolor</span>
                             </div>
                             <div className="who_table-org-third">
-                                <h2>Fundacja “Bez domu”</h2>
-                                <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                                <span>ubrania, jedzenie, ciepłe koce</span>
+                                <h2>Organizacja “Lorem Ipsum 6”</h2>
+                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
+                                <span>Mi, quis, hendrerit, dolor</span>
                             </div>
                         </TabPanel>
                     </Tabs>
                 </TabPanel>
                 {/*Locals*/}
                 <TabPanel>
-                    <span className="who_table-description-local">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at corporis, delectus deserunt dolorem exercitationem facere id impedit ipsum iste numquam optio placeat, praesentium quae rem repellat sunt temporibus velit.</span>
+                    <span className="who_table-description-local">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
                     <div className="who_table-loc-first">
-                        <h2>Fundacja “Dbam o Zdrowie”</h2>
-                        <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                        <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
+                        <h2>Zbiórka “Lorem Ipsum 1”</h2>
+                        <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
+                        <span>Egestas, sed, tempus</span>
                     </div>
                     <div className="who_table-loc-second">
-                        <h2>Fundacja “Dla dzieci”</h2>
-                        <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                        <span>ubrania, meble, zabawki</span>
+                        <h2>Zbiórka “Lorem Ipsum 2”</h2>
+                        <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
+                        <span>Ut, aliquam, purus, sit, amet</span>
                     </div>
                     <div className="who_table-loc-third">
-                        <h2>Fundacja “Bez domu”</h2>
-                        <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                        <span>ubrania, jedzenie, ciepłe koce</span>
+                        <h2>Zbiórka “Lorem Ipsum 3”</h2>
+                        <p>Scelerisque in dictum non consectetur a erat nam.</p>
+                        <span>Mi, quis, hendrerit, dolor</span>
                     </div>
                 </TabPanel>
             </Tabs>
