@@ -2,13 +2,14 @@
 .header_section{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   width: 1900px;
 
 .header_photo img {
-  width: 900px;
-  height: 750px;
+  width: 1368px;
+  height: 963px;
   opacity: 1;
-  margin-left: -200px;
+  margin-left: -483px;
   margin-top: 50px;
 }
   .header_right-section{
@@ -16,6 +17,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
+    margin-right: 142px;
 
 .header_user-panel{
   display: flex;
@@ -76,19 +78,24 @@
       margin-top: 50px;
 
       li {
-        margin-right: 20px;
-        padding: 13px 93px;
-
+        margin-right: 50px;
+        margin-left: 30px;
+        padding: 25px 30px;
+        border: 0.75px solid #3C3C3C;
+        width: 220px;
+        text-align: center;
+        font-weight: normal;
         a {
           text-decoration: none;
           font-size: 36px;
           color: var(--color-gray);
           text-transform: uppercase;
+          font-weight: normal;
         }
       }
 
       li:hover {
-        border: 0.75px solid #3C3C3C;
+       background-color: #d6e0e0;
       }
     }
   }
