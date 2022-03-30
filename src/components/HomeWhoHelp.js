@@ -19,17 +19,10 @@ const HomeWhoHelp = () => (
                 </TabList>
                 {/*Fundations*/}
                 <TabPanel>
-                    <Tabs>
                         <div className="who-table-fund">
                             <span className="who_table-description-fund">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</span>
-                            <TabList>
-                                <Tab>1</Tab>
-                                <Tab>2</Tab>
-                                <Tab>3</Tab>
-                            </TabList>
                         </div>
                         <div className="who_table-content">
-                        <TabPanel>
                     <div className="who_table-fund-first">
                         <h2>Fundacja “Dbam o Zdrowie”</h2>
                         <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
@@ -46,9 +39,9 @@ const HomeWhoHelp = () => (
                     <span>ubrania, jedzenie, ciepłe koce</span>
 
                 </div>
-                        </TabPanel>
                         </div>
-                        <TabPanel>
+
+
                             <div className="who_table-fund-first">
                                 <h2>Fundacja “Lorem Ipsum 4”</h2>
                                 <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
@@ -64,8 +57,7 @@ const HomeWhoHelp = () => (
                                 <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
                                 <span>ubrania, jedzenie, ciepłe koce</span>
                             </div>
-                        </TabPanel>
-                        <TabPanel>
+
                             <div className="who_table-fund-first">
                                 <h2>Fundacja “Lorem Ipsum 7”</h2>
                                 <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
@@ -82,19 +74,15 @@ const HomeWhoHelp = () => (
                                 <span>ubrania, jedzenie, ciepłe koce</span>
                             </div>
                         </TabPanel>
-                    </Tabs>
-                </TabPanel>
+
+
                 {/*Organizations*/}
                 <TabPanel>
-                    <Tabs>
                         <div className="who-table-org">
                             <span className="who_table-description-org">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
-                            <TabList>
-                                <Tab>1</Tab>
-                                <Tab>2</Tab>
-                            </TabList>
+
                         </div>
-                        <TabPanel>
+
                             <div className="who_table-org-first">
                                 <h2>Organizacja “Lorem Ipsum 1”</h2>
                                 <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
@@ -110,8 +98,8 @@ const HomeWhoHelp = () => (
                                 <p>Scelerisque in dictum non consectetur a erat nam.</p>
                                 <span>Mi, quis, hendrerit, dolor</span>
                             </div>
-                        </TabPanel>
-                        <TabPanel>
+
+
                             <div className="who_table-org-first">
                                 <h2>Organizacja “Lorem Ipsum 4”</h2>
                                 <p>Scelerisque in dictum non consectetur a erat nam.</p>
@@ -127,11 +115,9 @@ const HomeWhoHelp = () => (
                                 <p>Scelerisque in dictum non consectetur a erat nam.</p>
                                 <span>Mi, quis, hendrerit, dolor</span>
                             </div>
-                        </TabPanel>
-                    </Tabs>
                 </TabPanel>
                 {/*Locals*/}
-                <TabPanel>
+              <TabPanel>
                     <span className="who_table-description-local">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
                     <div className="who_table-loc-first">
                         <h2>Zbiórka “Lorem Ipsum 1”</h2>
@@ -148,7 +134,7 @@ const HomeWhoHelp = () => (
                         <p>Scelerisque in dictum non consectetur a erat nam.</p>
                         <span>Mi, quis, hendrerit, dolor</span>
                     </div>
-                </TabPanel>
+              </TabPanel>
             </Tabs>
         </div>
     </div>
