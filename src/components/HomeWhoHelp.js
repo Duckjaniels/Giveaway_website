@@ -14,8 +14,8 @@ const HomeWhoHelp = () => (
             <Tabs>
                 <TabList>
                     <Tab>Fundacjom</Tab>
-                    <Tab>Organizacjom<br/> pozarządowym</Tab>
-                    <Tab>Lokalnym<br/> zbiórkom</Tab>
+                    <Tab>Organizacjom pozarządowym</Tab>
+                    <Tab>Lokalnym zbiórkom</Tab>
                 </TabList>
                 {/*Fundations*/}
                 <TabPanel>

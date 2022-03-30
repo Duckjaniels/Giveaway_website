@@ -28,8 +28,12 @@
     height: 70px;
     font: normal normal normal 24px "Open Sans";
     }
+  .react-tabs__tab:focus::after{
+    height: 0;
+  }
   .react-tabs__tab--selected{
     border: 0.75px solid #3C3C3C;
+
   }
 }
 .who_table-description-fund, .who_table-description-org, .who_table-description-local{
