@@ -2,6 +2,7 @@ import React from 'react';
 import Decoration from "../assets/Decoration.svg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import '../scss/Home/HomeWhoHelp.scss'
 
 
 const HomeWhoHelp = () => (
@@ -13,8 +14,8 @@ const HomeWhoHelp = () => (
             <Tabs>
                 <TabList>
                     <Tab>Fundacjom</Tab>
-                    <Tab>Organizacjom pozarządowym</Tab>
-                    <Tab>Lokalnym zbiórkom</Tab>
+                    <Tab>Organizacjom<br/> pozarządowym</Tab>
+                    <Tab>Lokalnym<br/> zbiórkom</Tab>
                 </TabList>
                 {/*Fundations*/}
                 <TabPanel>
@@ -27,6 +28,7 @@ const HomeWhoHelp = () => (
                                 <Tab>3</Tab>
                             </TabList>
                         </div>
+                        <div className="who_table-content">
                         <TabPanel>
                     <div className="who_table-fund-first">
                         <h2>Fundacja “Dbam o Zdrowie”</h2>
@@ -42,8 +44,10 @@ const HomeWhoHelp = () => (
                     <h2>Fundacja “Bez domu”</h2>
                     <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
                     <span>ubrania, jedzenie, ciepłe koce</span>
+
                 </div>
                         </TabPanel>
+                        </div>
                         <TabPanel>
                             <div className="who_table-fund-first">
                                 <h2>Fundacja “Lorem Ipsum 4”</h2>

@@ -1,0 +1,33 @@
+.columns_section{
+  display: flex;
+  flex-direction: column;
+  width: 1900px;
+  text-align: center;
+
+}
+.who_title{
+  margin-bottom: 40px;
+  h1{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 38px;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+    font-weight: normal;
+    letter-spacing: -0.76px;
+  }
+}
+.react-tabs__tab-list{
+  border-bottom: none;
+
+  .react-tabs__tab{
+    border-radius: 0;
+    width: 208px;
+    height: 80px;
+    font: normal normal normal 24px "Open Sans";
+    }
+  .react-tabs__tab--selected{
+    border: 0.75px solid #3C3C3C;
+
+  }
+}
