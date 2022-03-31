@@ -1,11 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Decoration from "../assets/Decoration.svg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import '../scss/Home/HomeWhoHelp.scss'
+import  {fundation, organizations, locals}  from "./data";
 
 
-const HomeWhoHelp = () => (
+const HomeWhoHelp = () => {
+    const [posts, setPosts] = useState([]);
+    const [loading, setLoading] =useState(false);
+    const [currentPage, setCurrentPage] = useState(1)
+        const [postsPerPage, setPostsPerPage] =useState(9)
+    useEffect(()=>{
+        const fetchPosts = async () => {
+            setLoading(true);
+        }
+        fetchPosts();
+    }, []);
+console.log(posts)
+return(
     <div className="columns_section" title="section4" id="section4">
             <div className="who_title"><h1> Komu pomagamy?</h1>
                 <div className="who_decoration-image"> <img src ={Decoration} alt="decoration"/></div>
@@ -139,4 +152,5 @@ const HomeWhoHelp = () => (
         </div>
     </div>
 );
+}
 export {HomeWhoHelp}
