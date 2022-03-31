@@ -3,21 +3,61 @@ import Decoration from "../assets/Decoration.svg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import '../scss/Home/HomeWhoHelp.scss'
-import  {fundation, organizations, locals}  from "./data";
+import  {foundation, organizations, locals}  from "./data";
+import ReactPaginate from 'react-paginate'
 
 
 const HomeWhoHelp = () => {
-    const [posts, setPosts] = useState([]);
-    const [loading, setLoading] =useState(false);
-    const [currentPage, setCurrentPage] = useState(1)
-        const [postsPerPage, setPostsPerPage] =useState(9)
-    useEffect(()=>{
-        const fetchPosts = async () => {
-            setLoading(true);
-        }
-        fetchPosts();
-    }, []);
-console.log(posts)
+    function Items({ currentItems }) {
+        return (
+            <>
+                {currentItems && currentItems.map((item)=>(
+                    <article className={"tab--row"}>
+                        <div className={"tab--row--container"}>
+                            <div className={"tab--row--main"}>
+                                <h3 className={"tab--row--title"}>{item.title}</h3>
+                                <p className={"tab--row--paragraph"}>{item.target}</p>
+                            </div>
+                            <div>
+                                <p className={"tab--row--paragraph"}>{item.tags}</p>
+                            </div>
+                        </div>
+                    </article>
+                ))
+                }
+            </>
+        );
+    }
+
+    function PaginatedItems({ itemsPerPage }) {
+        const [currentItems, setCurrentItems] = useState(null);
+        const [pageCount, setPageCount] = useState(0);
+        const [itemOffset, setItemOffset] = useState(0);
+
+        useEffect(() => {
+            const endOffset = itemOffset + itemsPerPage;
+            setCurrentItems(foundation.slice(itemOffset, endOffset));
+            setPageCount(Math.ceil(foundation.length / itemsPerPage));
+        }, [itemOffset, itemsPerPage]);
+
+        const handlePageClick = (event) => {
+            const newOffset = (event.selected * itemsPerPage) % foundation.length;
+            setItemOffset(newOffset);
+        };
+
+        return (
+            <>
+                <Items currentItems={currentItems} />
+                <ReactPaginate
+                    breakLabel="..."
+                    onPageChange={handlePageClick}
+                    pageRangeDisplayed={5}
+                    pageCount={pageCount}
+                    renderOnZeroPageCount={null}
+                />
+            </>
+        );
+    }
 return(
     <div className="columns_section" title="section4" id="section4">
             <div className="who_title"><h1> Komu pomagamy?</h1>
@@ -36,116 +76,26 @@ return(
                             <span className="who_table-description-fund">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</span>
                         </div>
                         <div className="who_table-content">
-                    <div className="who_table-fund-first">
-                        <h2>Fundacja “Dbam o Zdrowie”</h2>
-                        <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                        <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
+                    <div className="who_table-fund-pag">
+                        <PaginatedItems itemsPerPage={3} />
                     </div>
-                    <div className="who_table-fund-second">
-                        <h2>Fundacja “Dla dzieci”</h2>
-                        <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                        <span>ubrania, meble, zabawki</span>
-                    </div>
-                    <div className="who_table-fund-third">
-                    <h2>Fundacja “Bez domu”</h2>
-                    <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                    <span>ubrania, jedzenie, ciepłe koce</span>
-
                 </div>
-                        </div>
-
-
-                            <div className="who_table-fund-first">
-                                <h2>Fundacja “Lorem Ipsum 4”</h2>
-                                <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                                <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
-                            </div>
-                            <div className="who_table-fund-second">
-                                <h2>Fundacja “Lorem Ipsum 5”</h2>
-                                <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                                <span>ubrania, meble, zabawki</span>
-                            </div>
-                            <div className="who_table-fund-third">
-                                <h2>Fundacja “Lorem Ipsum 6”</h2>
-                                <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                                <span>ubrania, jedzenie, ciepłe koce</span>
-                            </div>
-
-                            <div className="who_table-fund-first">
-                                <h2>Fundacja “Lorem Ipsum 7”</h2>
-                                <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
-                                <span>ubrania, jedzenie, sprzęt AGD, meble, zabawki</span>
-                            </div>
-                            <div className="who_table-fund-second">
-                                <h2>Fundacja “Lorem Ipsum 8”</h2>
-                                <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
-                                <span>ubrania, meble, zabawki</span>
-                            </div>
-                            <div className="who_table-fund-third">
-                                <h2>Fundacja “Lorem Ipsum 9”</h2>
-                                <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.</p>
-                                <span>ubrania, jedzenie, ciepłe koce</span>
-                            </div>
                         </TabPanel>
-
-
                 {/*Organizations*/}
                 <TabPanel>
                         <div className="who-table-org">
                             <span className="who_table-description-org">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
 
                         </div>
-
-                            <div className="who_table-org-first">
-                                <h2>Organizacja “Lorem Ipsum 1”</h2>
-                                <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
-                                <span>Egestas, sed, tempus</span>
-                            </div>
-                            <div className="who_table-org-second">
-                                <h2>Organizacja “Lorem Ipsum 2”</h2>
-                                <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
-                                <span>Ut, aliquam, purus, sit, amet</span>
-                            </div>
-                            <div className="who_table-org-third">
-                                <h2>Organizacja “Lorem Ipsum 3”</h2>
-                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
-                                <span>Mi, quis, hendrerit, dolor</span>
-                            </div>
-
-
-                            <div className="who_table-org-first">
-                                <h2>Organizacja “Lorem Ipsum 4”</h2>
-                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
-                                <span>Mi, quis, hendrerit, dolor</span>
-                            </div>
-                            <div className="who_table-org-second">
-                                <h2>Organizacja “Lorem Ipsum 5”</h2>
-                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
-                                <span>Mi, quis, hendrerit, dolor</span>
-                            </div>
-                            <div className="who_table-org-third">
-                                <h2>Organizacja “Lorem Ipsum 6”</h2>
-                                <p>Scelerisque in dictum non consectetur a erat nam.</p>
-                                <span>Mi, quis, hendrerit, dolor</span>
+                            <div className="who_table-org-pag">
+                                <PaginatedItems itemsPerPage={3} />
                             </div>
                 </TabPanel>
                 {/*Locals*/}
               <TabPanel>
                     <span className="who_table-description-local">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
-                    <div className="who_table-loc-first">
-                        <h2>Zbiórka “Lorem Ipsum 1”</h2>
-                        <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
-                        <span>Egestas, sed, tempus</span>
-                    </div>
-                    <div className="who_table-loc-second">
-                        <h2>Zbiórka “Lorem Ipsum 2”</h2>
-                        <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
-                        <span>Ut, aliquam, purus, sit, amet</span>
-                    </div>
-                    <div className="who_table-loc-third">
-                        <h2>Zbiórka “Lorem Ipsum 3”</h2>
-                        <p>Scelerisque in dictum non consectetur a erat nam.</p>
-                        <span>Mi, quis, hendrerit, dolor</span>
+                    <div className="who_table-loc-pag">
+                        <PaginatedItems itemsPerPage={3} />
                     </div>
               </TabPanel>
             </Tabs>

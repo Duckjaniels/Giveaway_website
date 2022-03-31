@@ -1,4 +1,4 @@
-const fundation = [
+const foundation = [
     {
     title: 'Fundacja “Dbam o Zdrowie”',
     target: 'Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.',
@@ -95,4 +95,4 @@ const locals = [
         tags: 'Egestas, sed, tempus',
     },
 ];
-export {fundation, organizations, locals}
+export {foundation, organizations, locals}
