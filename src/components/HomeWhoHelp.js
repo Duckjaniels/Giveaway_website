@@ -43,6 +43,7 @@ const HomeWhoHelp = () => {
         const handlePageClick = (event) => {
             const newOffset = (event.selected * itemsPerPage) % name.length;
             setItemOffset(newOffset);
+
         };
 
         return (
