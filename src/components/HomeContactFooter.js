@@ -34,13 +34,15 @@ const HomeContactFooter = () => (
                  <div className="footer_form-button"><button type="submit"  value="Submit">Wyślij</button></div>
              </form>
      </div>
-    <div className="footer_form-bottom">
-        <div className="copyright"><span> Copyright by Coders Lab</span></div>
-        <div className="social">
-            <img src ={Facebook} alt="Facebook app"/>
-            <img src ={Instagram} alt="Instagram app"/>
-        </div>
-    </div></div>
      </div>
+        <div className="footer_form-bottom">
+            <div className="copyright"><span> Copyright by Coders Lab</span></div>
+
+        </div>
+<div className="social">
+        <img src ={Facebook} alt="Facebook app"/>
+        <img src ={Instagram} alt="Instagram app"/>
+</div>
+    </div>
         );
 export {HomeContactFooter}
