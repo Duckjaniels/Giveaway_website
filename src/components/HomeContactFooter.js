@@ -3,14 +3,12 @@ import FooterPhoto from "../assets/Background-Contact-Form.jpg";
 import Decoration from "../assets/Decoration.svg";
 import Facebook from "../assets/Facebook.svg"
 import Instagram from "../assets/Instagram.svg"
+import "../scss/Home/HomeContactFooter.scss"
 
 const HomeContactFooter = () => (
 
-    <div className="columns_section" title="section5" id="section5">
+    <div className="columns_section-footer" title="section5" id="section5">
 
- <div className="footer_photo">
-     <img src ={FooterPhoto} alt="background footer clothes"/>
- </div>
          <div className="footer_right-section">
              <div className="footer_title"><h1>Skontaktuj się z nami</h1>
                  <div className="header_decoration-image"> <img src ={Decoration} alt="decoration"/>

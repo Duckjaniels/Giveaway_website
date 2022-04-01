@@ -50,7 +50,13 @@
   color: var(--color-gray);
 }
 .who_table-fund-pag, .who_table-org-pag, .who_table-loc-pag{
-
+.tab--row{
+  &:first-of-type{
+    .tab--row--container{
+      border-top: none;
+    }
+  }
+}
   .tab--row--container{
     display: flex;
     justify-content: space-between;

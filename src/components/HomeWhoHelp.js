@@ -6,11 +6,10 @@ import '../scss/Home/HomeWhoHelp.scss'
 import  {foundation, organizations, locals}  from "./data";
 import ReactPaginate from 'react-paginate'
 
-
-const HomeWhoHelp = () => {
-    function Items({ currentItems }) {
-        return (
-            <>
+function Items({ currentItems }) {
+    return (
+        <>
+            <div className="tab-test">
                 {currentItems && currentItems.map((item)=>(
                     <article className={"tab--row"}>
                         <div className={"tab--row--container"}>
@@ -25,40 +24,47 @@ const HomeWhoHelp = () => {
                     </article>
                 ))
                 }
-            </>
-        );
-    }
+            </div>
+        </>
+    );
+}
 
-    function PaginatedItems({ itemsPerPage, name }) {
-        const [currentItems, setCurrentItems] = useState(null);
-        const [pageCount, setPageCount] = useState(0);
-        const [itemOffset, setItemOffset] = useState(0);
+function PaginatedItems({ itemsPerPage, name }) {
+    const [currentItems, setCurrentItems] = useState(null);
+    const [pageCount, setPageCount] = useState(0);
+    const [itemOffset, setItemOffset] = useState(0);
 
-        useEffect(() => {
-            const endOffset = itemOffset + itemsPerPage;
-            setCurrentItems(name.slice(itemOffset, endOffset));
-            setPageCount(Math.ceil(name.length / itemsPerPage));
-        }, [itemOffset, itemsPerPage]);
+    useEffect(() => {
+        const endOffset = itemOffset + itemsPerPage;
+        setCurrentItems(name.slice(itemOffset, endOffset));
+        setPageCount(Math.ceil(name.length / itemsPerPage));
+        console.log({currentItems})
+    }, [itemOffset, itemsPerPage]);
 
-        const handlePageClick = (event) => {
-            const newOffset = (event.selected * itemsPerPage) % name.length;
-            setItemOffset(newOffset);
+    const handlePageClick = (event) => {
+        const newOffset = (event.selected * itemsPerPage) % name.length;
+        setItemOffset(newOffset);
 
-        };
+    };
 
-        return (
-            <>
-                <Items currentItems={currentItems} />
-                <ReactPaginate
-                    breakLabel="..."
-                    onPageChange={handlePageClick}
-                    pageRangeDisplayed={3}
-                    pageCount={pageCount}
-                    renderOnZeroPageCount={null}
-                />
-            </>
-        );
-    }
+    return (
+        <>
+            <Items currentItems={currentItems} />
+            {pageCount > 1 && ( <ReactPaginate
+                breakLabel="..."
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={3}
+                pageCount={pageCount}
+                renderOnZeroPageCount={null}
+            />)}
+           )}
+
+        </>
+    );
+}
+
+const HomeWhoHelp = () => {
+
 return(
     <div className="columns_section" title="section4" id="section4">
             <div className="who_title"><h1> Komu pomagamy?</h1>
