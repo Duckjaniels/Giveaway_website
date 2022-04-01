@@ -51,7 +51,7 @@ const HomeWhoHelp = () => {
                 <ReactPaginate
                     breakLabel="..."
                     onPageChange={handlePageClick}
-                    pageRangeDisplayed={5}
+                    pageRangeDisplayed={3}
                     pageCount={pageCount}
                     renderOnZeroPageCount={null}
                 />
