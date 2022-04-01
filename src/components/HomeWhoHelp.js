@@ -57,8 +57,6 @@ function PaginatedItems({ itemsPerPage, name }) {
                 pageCount={pageCount}
                 renderOnZeroPageCount={null}
             />)}
-           )}
-
         </>
     );
 }
