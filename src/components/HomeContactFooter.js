@@ -8,7 +8,7 @@ import "../scss/Home/HomeContactFooter.scss"
 const HomeContactFooter = () => (
 
     <div className="columns_section-footer" title="section5" id="section5">
-
+<div className="footer_content">
          <div className="footer_right-section">
              <div className="footer_title"><h1>Skontaktuj się z nami</h1>
                  <div className="header_decoration-image"> <img src ={Decoration} alt="decoration"/>
@@ -33,12 +33,14 @@ const HomeContactFooter = () => (
                  </div>
                  <div className="footer_form-button"><button type="submit"  value="Submit">Wyślij</button></div>
              </form>
-             <div className="copyright"><span> Copyright by Coders Lab</span></div>
-             <div className="social">
-                 <img src ={Facebook} alt="Facebook app"/>
-                 <img src ={Instagram} alt="Instagram app"/>
-             </div>
      </div>
+    <div className="footer_form-bottom">
+        <div className="copyright"><span> Copyright by Coders Lab</span></div>
+        <div className="social">
+            <img src ={Facebook} alt="Facebook app"/>
+            <img src ={Instagram} alt="Instagram app"/>
+        </div>
+    </div></div>
      </div>
         );
 export {HomeContactFooter}

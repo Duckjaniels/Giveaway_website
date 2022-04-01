@@ -1,32 +1,79 @@
 
 
-.columns_section-footer{
+.columns_section-footer {
   display: flex;
   width: 1900px;
   height: 1026px;
   justify-content: flex-end;
   align-items: center;
   margin-top: 20px;
-    background-image: url("../../assets/Background-Contact-Form.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: lighten;
-    background-color: rgba(255, 255, 255, 0.8);
+  background-image: url("../../assets/Background-Contact-Form.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.8);
 
+  .footer_right-section {
+    margin-right: 145px;
+  }
 
-  .footer_title{
+  .footer_title {
+    margin-bottom: 40px;
+
+    h1 {
+      margin-top: 55px;
+      text-align: center;
+      font-size: 38px;
+      color: var(--color-gray);
       margin-bottom: 40px;
-      h1{
-        margin-top: 55px;
-        text-align: center;
-        font-size: 38px;
-        color: var(--color-gray);
-        margin-bottom: 40px;
-        font-weight: normal;
-        letter-spacing: -0.76px;
-      }
-    .header_decoration-image{
-      margin-left: 30%;
+      font-weight: normal;
+      letter-spacing: -0.76px;
     }
+
+    .header_decoration-image {
+      margin-left:18%;
     }
   }
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  input, textarea{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .footer_form-info {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+
+    .input-100{
+      margin-right: 10px;
+    }
+  }
+  .footer_form-button{
+    margin-top: 44px;
+    display: flex;
+    justify-content: flex-end;
+    button{
+   color: var(--color-gray);
+    padding: 13px 53px;
+    }
+  }
+  .footer_content{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  .footer_form-bottom{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer_right-section{
+    margin-top: 150px;
+  }
+}
