@@ -29,19 +29,19 @@ const HomeWhoHelp = () => {
         );
     }
 
-    function PaginatedItems({ itemsPerPage }) {
+    function PaginatedItems({ itemsPerPage, name }) {
         const [currentItems, setCurrentItems] = useState(null);
         const [pageCount, setPageCount] = useState(0);
         const [itemOffset, setItemOffset] = useState(0);
 
         useEffect(() => {
             const endOffset = itemOffset + itemsPerPage;
-            setCurrentItems(foundation.slice(itemOffset, endOffset));
-            setPageCount(Math.ceil(foundation.length / itemsPerPage));
+            setCurrentItems(name.slice(itemOffset, endOffset));
+            setPageCount(Math.ceil(name.length / itemsPerPage));
         }, [itemOffset, itemsPerPage]);
 
         const handlePageClick = (event) => {
-            const newOffset = (event.selected * itemsPerPage) % foundation.length;
+            const newOffset = (event.selected * itemsPerPage) % name.length;
             setItemOffset(newOffset);
         };
 
@@ -77,7 +77,7 @@ return(
                         </div>
                         <div className="who_table-content">
                     <div className="who_table-fund-pag">
-                        <PaginatedItems itemsPerPage={3} />
+                        <PaginatedItems name = {foundation} itemsPerPage={3} />
                     </div>
                 </div>
                         </TabPanel>
@@ -88,14 +88,14 @@ return(
 
                         </div>
                             <div className="who_table-org-pag">
-                                <PaginatedItems itemsPerPage={3} />
+                                <PaginatedItems name = {organizations} itemsPerPage={3} />
                             </div>
                 </TabPanel>
                 {/*Locals*/}
               <TabPanel>
                     <span className="who_table-description-local">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
                     <div className="who_table-loc-pag">
-                        <PaginatedItems itemsPerPage={3} />
+                        <PaginatedItems name = {locals} itemsPerPage={3} />
                     </div>
               </TabPanel>
             </Tabs>

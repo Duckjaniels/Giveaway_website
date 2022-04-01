@@ -22,11 +22,15 @@
   justify-content: center;
   align-items: flex-end;
   .react-tabs__tab{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 0;
     border: none;
     width: 200px;
     height: 70px;
     font: normal normal normal 24px "Open Sans";
+    color: var(--color-gray);
     }
   .react-tabs__tab:focus::after{
     height: 0;
@@ -42,6 +46,6 @@
   font-size: 22px;
   width: 640px;
   height: 94px;
-  margin-top: 50px
-
+  margin-top: 50px;
+  color: var(--color-gray);
 }
