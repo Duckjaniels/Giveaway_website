@@ -4,9 +4,10 @@ import Facebook from "../assets/Facebook.svg"
 import Instagram from "../assets/Instagram.svg"
 import "../scss/Home/HomeContactFooter.scss"
 import useForm from "./useForm";
+import validate from "./validateInfo"
 
 const HomeContactFooter = () => {
-    const {handleChange, values, handleSubmit} = useForm();
+    const {handleChange, values, handleSubmit, errors} = useForm(validate);
 return(
     <div className="columns_section-footer" title="section5" id="section5">
         <div className="footer_content">
@@ -25,6 +26,7 @@ return(
                                    placeholder="Krzysztof"
                                    value={values.username}
                                    onChange={handleChange}/>
+                            {errors.username && <p>{errors.username}</p>}
                         </label>
                         <label>
                             Wpisz swój email
@@ -34,6 +36,7 @@ return(
                                    placeholder="abc@xyz.pl"
                                    value={values.email}
                                    onChange={handleChange}/>
+                            {errors.email && <p>{errors.email}</p>}
                         </label>
                     </div>
                     <div className="footer_form-message">
@@ -46,6 +49,7 @@ return(
                                       value={values.message}
                                       onChange={handleChange}
                             />
+                            {errors.message && <p>{errors.message}</p>}
                         </label>
                     </div>
                     <div className="footer_form-button">
