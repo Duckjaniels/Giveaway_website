@@ -39,10 +39,11 @@
     display: flex;
     flex-direction: column;
   }
-  input, textarea{
+  input{
     border-top: none;
     border-left: none;
     border-right: none;
+
   }
   .footer_form-info {
     display: flex;
@@ -54,13 +55,24 @@
       margin-right: 10px;
       width: 256px;
       font-size: 18px;
+
+    }
+    label p{
+      color:red;
+      margin-top: 10px;
     }
   }
   .input-250{
-    width: 256px;
+    height: 100px;
+    width: 528px;
     margin-top: 20px;
     font-size: 18px;
-    height: 100%;
+    text-align: center;
+
+  }
+  label p{
+    color:red;
+    margin-top: 10px;
   }
   .footer_form-button{
     margin-top: 44px;
