@@ -1,0 +1,37 @@
+.header_user-panel{
+  display: flex;
+  flex-direction: column;
+  margin-top: -200px;
+  .header_user-buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 34px;
+    li{
+      margin-right: 20px;
+      padding: 10px 10px;
+      font-size: 14px;
+
+      a{
+        text-decoration: none;
+        color: var(--color-grey);
+      }
+    }
+    li:hover{
+      border: 0.75px solid #FAD648;
+    }
+  }
+}
+
+.header_navbar-items{
+  display: flex;
+  justify-content: space-between;
+  a{
+    font-size: 18px;
+    color: var(--color-gray);
+    padding: 9px 20px;
+  }
+  a:hover{
+    border: 0.75px solid #3C3C3C;
+    cursor: pointer;
+  }
+}
