@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import Decoration from "../assets/Decoration.svg";
+import Decoration from "../../assets/Decoration.svg";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import '../scss/Home/HomeWhoHelp.scss'
-import  {foundation, organizations, locals}  from "./data";
+import '../../scss/Home/HomeWhoHelp.scss'
+import  {foundation, organizations, locals}  from "../data";
 import ReactPaginate from 'react-paginate'
 
 function Items({ currentItems }) {

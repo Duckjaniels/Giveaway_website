@@ -1,25 +1,26 @@
 import React, {useState} from 'react';
-import Decoration from "../assets/Decoration.svg";
-import Facebook from "../assets/Facebook.svg"
-import Instagram from "../assets/Instagram.svg"
-import "../scss/Home/HomeContactFooter.scss"
-import useForm from "./useForm";
-import validate from "./validateInfo"
+import Decoration from "../../assets/Decoration.svg";
+import Facebook from "../../assets/Facebook.svg"
+import Instagram from "../../assets/Instagram.svg"
+import "../../scss/Home/HomeContactFooter.scss"
+import useForm from "../useForm";
+import validate from "../validateInfo"
+
+
 
 const HomeContactFooter = () => {
-    const {handleChange, values, handleSubmit, errors} = useForm(validate);
-    // const [isSubmitted, setIsSubmitted] = useState(false);
+    const {handleChange, values, handleSubmit, errors, result} = useForm(validate);
 
-    // function submitForm(){
-    //     setIsSubmitted(true);
-    // }
+
 return(
     <div className="columns_section-footer" title="section5" id="section5">
         <div className="footer_content">
             <div className="footer_right-section">
                 <div className="footer_title"><h1>Skontaktuj się z nami</h1>
                     <div className="header_decoration-image"><img src={Decoration} alt="decoration"/>
-                        {/*{!isSubmitted ? submitForm={submitForm} : <p>Wiadomość została wysłana!<br/>Wkrótce się skontaktujemy</p>}*/}
+                        <div className="footer_agree" onSubmit={result}>
+                            {result ? <p>Wiadomość została wysłana!<br/>Wkrótce się skontaktujemy</p> : null }
+                            </div>
                     </div>
                 </div>
                 <form action="" className="footer_form" onSubmit={handleSubmit}>
@@ -48,7 +49,7 @@ return(
                     <div className="footer_form-message">
                         <label>
                             Wpisz swoją wiadomość
-                            <input className="input-250"
+                            <textarea className="textarea-250"
                                       name="message"
                                       required
                                       placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci animi aperiam aut eligendi fuga illo quos ratione rem, similique. Atque ea earum ipsam maxime, nemo non omnis pariatur repellat?"

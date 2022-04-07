@@ -1,10 +1,10 @@
 import React from 'react';
-import "../scss/Home/HomeEasySteps.scss"
-import Decoration from "../assets/Decoration.svg";
-import Tshirt from "../assets/Icon-1.svg";
-import Bag from "../assets/Icon-2.svg"
-import Scope from "../assets/Icon-3.svg"
-import Circle from "../assets/Icon-4.svg"
+import "../../scss/Home/HomeEasySteps.scss"
+import Decoration from "../../assets/Decoration.svg";
+import Tshirt from "../../assets/Icon-1.svg";
+import Bag from "../../assets/Icon-2.svg"
+import Scope from "../../assets/Icon-3.svg"
+import Circle from "../../assets/Icon-4.svg"
 import {Link} from "react-router-dom";
 
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Link as Scroll } from "react-scroll";
-import '../scss/Home/HomeHeader.scss'
-import Decoration from "../assets/Decoration.svg"
-import BgPhoto from "../assets/Home-Hero-Image.jpg"
+import '../../scss/Home/HomeHeader.scss'
+import Decoration from "../../assets/Decoration.svg"
+import BgPhoto from "../../assets/Home-Hero-Image.jpg"
 
 const HomeHeader = () => (
 

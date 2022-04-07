@@ -21,7 +21,11 @@ const useForm = (validate) =>{
         setErrors(validate(values));
         setIsSubmitting(true);
     };
-    return {handleChange, values , handleSubmit, errors};
+    const result = e => {
+        e.preventDefault();
+        isSubmitting(true);
+    }
+        return {handleChange, values , handleSubmit, errors, result};
 
 }
 export default useForm;

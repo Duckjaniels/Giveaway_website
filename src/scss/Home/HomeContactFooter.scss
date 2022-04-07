@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
   }
-  input{
+  input, textarea{
     border-top: none;
     border-left: none;
     border-right: none;
@@ -62,12 +62,12 @@
       margin-top: 10px;
     }
   }
-  .input-250{
+  .textarea-250{
+    resize: none;
     height: 100px;
-    width: 528px;
+    width: 540px;
     margin-top: 20px;
     font-size: 18px;
-    text-align: center;
 
   }
   label p{
