@@ -6,10 +6,13 @@ import "../../scss/Home/HomeContactFooter.scss"
 import useForm from "../useForm";
 import validate from "../validateInfo"
 
-
-
+const Success = ({success}) =>{
+    return (
+        <p>{success}</p>
+    )
+}
 const HomeContactFooter = () => {
-    const {handleChange, values, handleSubmit, errors, result} = useForm(validate);
+    const {handleChange, values, handleSubmit, errors, success} = useForm(validate);
 
 
 return(
@@ -18,8 +21,8 @@ return(
             <div className="footer_right-section">
                 <div className="footer_title"><h1>Skontaktuj się z nami</h1>
                     <div className="header_decoration-image"><img src={Decoration} alt="decoration"/>
-                        <div className="footer_agree" onSubmit={result}>
-                            {result ? <p>Wiadomość została wysłana!<br/>Wkrótce się skontaktujemy</p> : null }
+                        <div className="footer_agree">
+                            <p>{success}</p>
                             </div>
                     </div>
                 </div>

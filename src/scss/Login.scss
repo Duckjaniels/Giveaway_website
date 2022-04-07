@@ -54,22 +54,12 @@ input{
     margin-top: 10px;
   }
 }
-.login_user-panel ul{
+.login_user-panel ul {
   position: absolute;
   display: flex;
   flex-direction: row;
   width: 25%;
-  left:725px;
+  left: 725px;
   justify-content: space-between;
   margin-top: -150px;
-  a{
-    font-size: 18px;
-    color: var(--color-gray);
-    padding: 9px 20px;
-    text-decoration: none;
-  }
-  a:hover{
-    border: 0.75px solid #3C3C3C;
-    cursor: pointer;
-  }
 }

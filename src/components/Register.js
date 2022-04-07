@@ -52,8 +52,8 @@ const Register = () => {
             </form>
             <div className="register_user-panel">
                 <ul className="register_user-buttons">
-                    <li className="register_user-login"> <Link to={"/Login"}>Zaloguj się </Link></li>
-                    <li className="register_user-register"> <Link to={"/Register"}> Załóż konto </Link></li>
+                    <li className="register_user-login" type="submit" value="Submit"> <Link to={"/Login"}>Zaloguj się </Link></li>
+                    <li className="register_user-register" type="submit" value="Submit"> <Link to={"/Register"}> Załóż konto </Link></li>
                 </ul>
             </div>
         </div>

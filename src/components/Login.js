@@ -43,8 +43,8 @@ return(
         </form>
         <div className="login_user-panel">
             <ul className="login_user-buttons">
-                <li className="login_user-register"> <Link to={"/Register"}> Załóż konto </Link></li>
-                <li className="login_user-login"> <Link to={"/Login"}>Zaloguj się </Link></li>
+                <li className="login_user-register" type="submit" value="Submit"> <Link to={"/Register"}> Załóż konto </Link></li>
+                <li className="login_user-login" type="submit" value="Submit"> Zaloguj się </li>
             </ul>
         </div>
     </div>
