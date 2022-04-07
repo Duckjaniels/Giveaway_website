@@ -12,7 +12,7 @@ const {handleChange, values, handleSubmit, errors,} = useForm(validate);
 
 return(
     <div className="login_section" title="section6" id="section6">
-        <div className="header_navbar">
+        <div className="login_navbar">
             <Navbar/>
         </div>
         <div className="login_title"><h1>Zaloguj się</h1>
