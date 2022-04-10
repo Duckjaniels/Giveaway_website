@@ -49,19 +49,22 @@ const Login = () => {
             {errors.password && <p>{errors.password}</p>}
           </label>
         </div>
+
+        <div className="login_user-panel">
+          <ul className="login_user-buttons">
+            <li className="login_user-register" type="submit" value="Submit">
+              {" "}
+              <Link to={"/Register"}> Załóż konto </Link>
+            </li>
+            <li className="login_user-login" type="submit" value="Submit">
+              {" "}
+              <button type="submit" value="Submit">
+                Zaloguj się
+              </button>
+            </li>
+          </ul>
+        </div>
       </form>
-      <div className="login_user-panel">
-        <ul className="login_user-buttons">
-          <li className="login_user-register" type="submit" value="Submit">
-            {" "}
-            <Link to={"/Register"}> Załóż konto </Link>
-          </li>
-          <li className="login_user-login" type="submit" value="Submit">
-            {" "}
-            <Link to={"/LoggedIn"}> Zaloguj się </Link>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
