@@ -70,7 +70,7 @@ const Register = () => {
           </li>
           <li className="register_user-register" type="submit" value="Submit">
             {" "}
-            <Link to={"/Register"}> Załóż konto </Link>
+            <Link to={"/Registered"}> Załóż konto </Link>
           </li>
         </ul>
       </div>

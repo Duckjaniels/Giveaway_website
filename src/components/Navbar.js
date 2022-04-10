@@ -19,16 +19,16 @@ const Navbar = () => (
     <nav className="header_navbar-content">
       <ul className="header_navbar-items">
         <li className="header_navbar-item">
-          <Scroll
+          <Link
             activeClass="active"
-            to="section1"
+            to="/"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
           >
             Start{" "}
-          </Scroll>
+          </Link>
         </li>
         <li className="header_navbar-item">
           <Scroll

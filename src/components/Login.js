@@ -58,7 +58,7 @@ const Login = () => {
           </li>
           <li className="login_user-login" type="submit" value="Submit">
             {" "}
-            Zaloguj się{" "}
+            <Link to={"/LoggedIn"}> Zaloguj się </Link>
           </li>
         </ul>
       </div>
