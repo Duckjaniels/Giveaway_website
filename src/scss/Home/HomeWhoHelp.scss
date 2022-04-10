@@ -1,12 +1,14 @@
-.columns_section{
+.columns_section {
   display: flex;
   flex-direction: column;
   width: 1900px;
   text-align: center;
 }
-.who_title{
+
+.who_title {
   margin-bottom: 40px;
-  h1{
+
+  h1 {
     margin-top: 55px;
     text-align: center;
     font-size: 38px;
@@ -16,12 +18,14 @@
     letter-spacing: -0.76px;
   }
 }
+
 .react-tabs__tab-list {
   border: none;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  .react-tabs__tab{
+
+  .react-tabs__tab {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,16 +35,20 @@
     height: 70px;
     font: normal normal normal 24px "Open Sans";
     color: var(--color-gray);
-    }
-  .react-tabs__tab:focus::after{
+  }
+
+  .react-tabs__tab:focus::after {
     height: 0;
   }
-  .react-tabs__tab--selected{
-    border: 0.75px solid #3C3C3C;
 
+  .react-tabs__tab--selected {
+    border: 0.75px solid #3c3c3c;
   }
 }
-.who_table-description-fund, .who_table-description-org, .who_table-description-local{
+
+.who_table-description-fund,
+.who_table-description-org,
+.who_table-description-local {
   display: inline-block;
   text-align: center;
   font-size: 22px;
@@ -49,15 +57,19 @@
   margin-top: 50px;
   color: var(--color-gray);
 }
-.who_table-fund-pag, .who_table-org-pag, .who_table-loc-pag{
-.tab--row{
-  &:first-of-type{
-    .tab--row--container{
-      border-top: none;
+
+.who_table-fund-pag,
+.who_table-org-pag,
+.who_table-loc-pag {
+  .tab--row {
+    &:first-of-type {
+      .tab--row--container {
+        border-top: none;
+      }
     }
   }
-}
-  .tab--row--container{
+
+  .tab--row--container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,43 +78,52 @@
     border-top: 1px solid #707070;
     padding: 31px 0;
   }
+}
+
+.tab--row--main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .tab--row--title {
+    margin-bottom: 6px;
+    color: var(--color-grey);
   }
-    .tab--row--main{
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      .tab--row--title {
-        margin-bottom: 6px;
-        color: var(--color-grey);
-      }
-    }
-    .tab--row--paragraph{
-      display: flex;
-      align-items: flex-end;
-      color: var(--color-grey);
-    }
-.react-tabs ul{
+}
+
+.tab--row--paragraph {
+  display: flex;
+  align-items: flex-end;
+  color: var(--color-grey);
+}
+
+.react-tabs ul {
   display: flex;
   justify-content: center;
   cursor: pointer;
 
-  .previous, .next{
+  .previous,
+  .next {
     display: none;
   }
-  a{
+
+  a {
     padding: 15px 15px;
     color: var(--color-gray);
   }
-  li{
+
+  li {
     width: 40px;
     height: 50px;
     display: flex;
     margin: 60px 10px;
   }
-  .selected{
+
+  .selected {
     border: 1px solid #707070;
   }
-  img{
+
+  img {
     position: absolute;
   }
 }

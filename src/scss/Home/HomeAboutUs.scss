@@ -1,22 +1,25 @@
-.columns_section-fourth{
+.columns_section-fourth {
   display: flex;
   flex-direction: row;
   width: 1900px;
   text-align: center;
   margin-top: 80px;
 }
+
 .about_image {
   img {
     width: 942px;
     height: 935px;
   }
 }
-.columns_section-content{
+
+.columns_section-content {
   background-color: var(--color-bg-grey);
   display: flex;
-align-items: center;
-  .about_title{
-    h1{
+  align-items: center;
+
+  .about_title {
+    h1 {
       margin-top: 55px;
       text-align: center;
       font-size: 38px;
@@ -25,7 +28,8 @@ align-items: center;
       font-weight: normal;
       letter-spacing: -0.76px;
     }
-    p{
+
+    p {
       font-size: 30px;
       color: var(--color-gray);
       margin: 55px 20%;
@@ -33,7 +37,8 @@ align-items: center;
       width: 60%;
       line-height: 40px;
     }
-    .signature{
+
+    .signature {
       margin-left: 50%;
     }
   }

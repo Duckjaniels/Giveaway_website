@@ -1,66 +1,68 @@
-
-.header_section{
+.header_section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 1900px;
 
-.header_photo img {
-  width: 1368px;
-  height: 963px;
-  opacity: 1;
-  margin-left: -483px;
-  margin-top: 50px;
-}
-  .header_right-section{
+  .header_photo img {
+    width: 1368px;
+    height: 963px;
+    opacity: 1;
+    margin-left: -483px;
+    margin-top: 50px;
+  }
+
+  .header_right-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     position: relative;
     margin-right: 142px;
 
-
-  .header_title{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -100px;
-    h1{
+    .header_title {
       text-align: center;
-      font-size: 38px;
-      color: var(--color-gray);
-      margin-bottom: 58px;
-      font-weight: normal;
-      letter-spacing: -0.76px;
-      line-height: 50px;
-    }
-    .header_task-buttons {
       display: flex;
       justify-content: center;
-      margin-top: 50px;
+      flex-direction: column;
+      margin-top: -100px;
 
-      li {
-        margin-right: 50px;
-        margin-left: 30px;
-        padding: 25px 30px;
-        border: 0.75px solid #3C3C3C;
-        width: 220px;
+      h1 {
         text-align: center;
+        font-size: 38px;
+        color: var(--color-gray);
+        margin-bottom: 58px;
         font-weight: normal;
-        a {
-          text-decoration: none;
-          font-size: 36px;
-          color: var(--color-gray);
-          text-transform: uppercase;
+        letter-spacing: -0.76px;
+        line-height: 50px;
+      }
+
+      .header_task-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+
+        li {
+          margin-right: 50px;
+          margin-left: 30px;
+          padding: 25px 30px;
+          border: 0.75px solid #3c3c3c;
+          width: 220px;
+          text-align: center;
           font-weight: normal;
+
+          a {
+            text-decoration: none;
+            font-size: 36px;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: normal;
+          }
+        }
+
+        li:hover {
+          background-color: #d6e0e0;
         }
       }
-
-      li:hover {
-       background-color: #d6e0e0;
-      }
     }
-  }
   }
 }
