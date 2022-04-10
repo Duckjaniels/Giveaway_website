@@ -1,6 +1,6 @@
 import React from "react";
 import { Link as Scroll } from "react-scroll";
-import "../scss/Navbar.scss";
+import "../../scss/Constants/Navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => (

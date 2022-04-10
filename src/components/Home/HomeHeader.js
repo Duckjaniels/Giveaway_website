@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../../scss/Home/HomeHeader.scss";
 import Decoration from "../../assets/Decoration.svg";
 import BgPhoto from "../../assets/Home-Hero-Image.jpg";
-import { Navbar } from "../Navbar";
+import { Navbar } from "../Constants/Navbar";
 
 const HomeHeader = () => (
   <div className="header_section" title="section1" id="section1">

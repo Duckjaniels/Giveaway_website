@@ -3,8 +3,8 @@ import Decoration from "../../assets/Decoration.svg";
 import Facebook from "../../assets/Facebook.svg";
 import Instagram from "../../assets/Instagram.svg";
 import "../../scss/Home/HomeContactFooter.scss";
-import useForm from "../useForm";
-import validate from "../validateInfo";
+import useForm from "../Hooks/useForm";
+import validate from "../Validations/validateInfo";
 
 const Success = ({ success }) => {
   return <p>{success}</p>;

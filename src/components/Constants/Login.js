@@ -1,10 +1,10 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import Decoration from "../assets/Decoration.svg";
-import useForm from "../../src/components/useForm";
-import validate from "../../src/components/validateInfo";
+import Decoration from "../../assets/Decoration.svg";
+import useForm from "../Hooks/useForm";
+import validate from "../Validations/validateInfo";
 import { Link } from "react-router-dom";
-import "../scss/Login.scss";
+import "../../scss/Constants/Login.scss";
 
 const Login = () => {
   const { handleChange, values, handleSubmit, errors } = useForm(validate);

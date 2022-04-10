@@ -1,4 +1,4 @@
-.register_section {
+.login_section {
   display: flex;
   flex-direction: column;
   width: 1900px;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.register-navbar {
+.login-navbar {
   display: flex;
   width: 100%;
 }
@@ -17,7 +17,7 @@
   margin-top: -130px;
 }
 
-.register_title h1 {
+.login_title h1 {
   text-align: center;
   font-size: 38px;
   color: var(--color-gray);
@@ -39,7 +39,7 @@ input {
   border-right: none;
 }
 
-.register_form-info {
+.login_form-info {
   display: flex;
   margin-top: -150px;
   justify-content: flex-start;
@@ -58,15 +58,15 @@ input {
   }
 }
 
-.register_user-panel ul {
+.login_user-panel ul {
   position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  left: 37%;
   margin-top: 20px;
+  left: 29%;
 
   button {
     border: 0;
