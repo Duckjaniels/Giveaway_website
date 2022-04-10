@@ -1,5 +1,6 @@
 .logout_section {
   display: flex;
+
   flex-direction: column;
   width: 1900px;
   height: 100vh;
@@ -10,6 +11,11 @@
   .logout-navbar {
     display: flex;
     width: 100%;
+  }
+
+  .logout_title {
+    text-align: center;
+    margin-bottom: -250px;
   }
 
   .logout_title h1 {
@@ -32,5 +38,6 @@
   a:hover {
     border: 0.75px solid #3c3c3c;
     cursor: pointer;
+
   }
 }
