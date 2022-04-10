@@ -41,7 +41,7 @@ input {
 
 .register_form-info {
   display: flex;
-  margin-top: -100px;
+  margin-top: -150px;
   justify-content: flex-start;
   flex-direction: column;
 
@@ -62,10 +62,24 @@ input {
   position: absolute;
   display: flex;
   flex-direction: row;
-  width: 18%;
-  left: 725px;
   justify-content: space-between;
-  margin-top: -150px;
+  align-items: center;
+  width: 400px;
+  left: 37%;
+  margin-top: 20px;
+
+  button {
+    border: 0;
+    padding: 9px 20px;
+    color: var(--color-gray);
+    background-color: #FFFFFA;
+    font-size: 18px;
+  }
+
+  button:hover {
+    border: 0.75px solid #3c3c3c;
+    cursor: pointer;
+  }
 
   a {
     font-size: 18px;

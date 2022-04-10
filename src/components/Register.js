@@ -54,26 +54,29 @@ const Register = () => {
               className="input-100"
               name="password2"
               required
-              type="password2"
+              type="password"
               value={values.password2}
               onChange={handleChange}
             />
             {errors.password2 && <p>{errors.password2}</p>}
           </label>
         </div>
+
+        <div className="register_user-panel">
+          <ul className="register_user-buttons">
+            <li className="register_user-login" type="submit" value="Submit">
+              {" "}
+              <Link to={"/Login"}>Zaloguj się </Link>
+            </li>
+            <li className="register_user-register" type="submit" value="Submit">
+              {" "}
+              <button type="submit" value="Submit">
+                Załóż konto
+              </button>
+            </li>
+          </ul>
+        </div>
       </form>
-      <div className="register_user-panel">
-        <ul className="register_user-buttons">
-          <li className="register_user-login" type="submit" value="Submit">
-            {" "}
-            <Link to={"/Login"}>Zaloguj się </Link>
-          </li>
-          <li className="register_user-register" type="submit" value="Submit">
-            {" "}
-            <Link to={"/Registered"}> Załóż konto </Link>
-          </li>
-        </ul>
-      </div>
     </div>
   );
 };
