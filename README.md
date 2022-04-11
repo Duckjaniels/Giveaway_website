@@ -5,7 +5,7 @@ Giveaway website
 Te main purpose of the project is creacting a virtual place where everyone can give away unnecessary things to trusted
 institutions.
 
-Project is a website, with simple form which will make it easier for user to give away things.
+Project is a website, with simple form which will make it easier for user to give things away.
 
 ## Table of Contents
 
