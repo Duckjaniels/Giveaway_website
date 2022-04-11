@@ -67,4 +67,4 @@ Project is: _in progress_.
 
 ## Contact
 
-Created by [_Duckjaniels_](https://www.linkedin.com/in/kaczorowski-maksym/) - feel free to contact me!
+Created by [_Duckjaniels_](https://www.linkedin.com/in/maksym-kaczorowski-008b3a154/) - feel free to contact me!
