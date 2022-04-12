@@ -61,6 +61,7 @@ Project is: _in progress_.
 
 ## Room for Improvement
 
+- Mobile version
 - LogIn / LogOut features
 - form assisting ordering delivery of given goods
 - database connection
