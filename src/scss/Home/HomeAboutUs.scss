@@ -9,23 +9,24 @@
 
 .about_image {
   img {
-    width: 948px;
-    height: 100%;
+      width: 50vw;
+      height: 80%;
   }
 }
 
 .columns_section-content {
+  height: 80%;
   background-color: var(--color-bg-grey);
   display: flex;
   align-items: center;
 
   .about_title {
     h1 {
-      margin-top: 55px;
+      height: 80%;
       text-align: center;
-      font-size: 38px;
+      font-size: 33px;
       color: var(--color-gray);
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       font-weight: normal;
       letter-spacing: -0.76px;
     }
@@ -33,14 +34,15 @@
     p {
       font-size: 30px;
       color: var(--color-gray);
-      margin: 55px 20%;
+      margin: 30px 20%;
       text-align: center;
       width: 60%;
-      line-height: 40px;
+      line-height: 30px;
     }
 
     .signature {
       margin-left: 50%;
+      width: 25%;
     }
   }
 }
